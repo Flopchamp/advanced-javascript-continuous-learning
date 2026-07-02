@@ -1,0 +1,14 @@
+body{
+  background-color: lightblue;
+  text-align: center;
+}
+.limit{
+  color:green;
+}
+.real-time{
+  color:blue;
+}
+.textArea{
+  width: 400px;
+  height: 200px;
+}
