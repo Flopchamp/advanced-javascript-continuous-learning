@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    align-items: center;
+}
+p{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="text"] {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+result{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
