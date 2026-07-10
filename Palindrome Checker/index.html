@@ -7,11 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h3>Enter in text to check for a palindrome:</h3>
-<input id="text-input" type="text">
-<button id ="check-btn">Check</button>
-<p id ="result"></p>
+    <main class="app" aria-labelledby="app-title">
+        <div class="card">
+            <h1 id="app-title">Palindrome Checker</h1>
+            <p class="hint">Type text or a phrase and press <strong>Check</strong>.</p>
+
+            <label for="text-input" class="sr-only">Text to check</label>
+            <div class="input-row">
+                <input id="text-input" type="text" placeholder="Enter text or phrase" aria-describedby="result" />
+                <div class="buttons">
+                    <button id="check-btn" class="btn primary">Check</button>
+                    <button id="clear-btn" class="btn">Clear</button>
+                </div>
+            </div>
+
+            <p id="result" class="result" aria-live="polite"></p>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 
 </html>
