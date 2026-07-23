@@ -1,0 +1,73 @@
+/* Center everything on the viewport screen */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  font-family: sans-serif;
+  color: #f9fafb;
+}
+
+/* Style the overall physical machine shell */
+#drum-machine {
+  background-color: #2d3748;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Arrange the 9 buttons into a clean 3x3 layout matrix */
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* Design the uniform clickable sound trigger pad tiles */
+.drum-pad {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f59e0b;
+  color: #111827;
+  box-shadow: 0 4px #b45309;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+/* Add clear user response indicators when interacting with tiles */
+.drum-pad:hover {
+  background-color: #fbbf24;
+}
+
+.drum-pad:active,
+.drum-pad.active {
+  transform: translateY(4px);
+  box-shadow: none;
+  background-color: #f97316;
+}
+
+/* Style the text element to resemble a digital LCD screen tracker */
+#display {
+  width: 200px;
+  height: 45px;
+  background-color: #111827;
+  color: #7dd3fc;
+  font-family: monospace;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: 0;
+  border: 1px solid #374151;
+}
