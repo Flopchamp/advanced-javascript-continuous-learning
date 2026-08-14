@@ -1,5 +1,5 @@
 function adjacencyListToMatrix(obj){
-    // find the key of the object and get the length of the object to find the number of nodes in the graph
+    // find the keys of the object and get the length of the object to find the number of nodes in the graph
   let N = Object.keys(obj).length
   // create a 2D array of size N x N and fill it with 0s
   const matrix = Array.from({length:N},()=> Array(N).fill(0))
@@ -18,3 +18,13 @@ function adjacencyListToMatrix(obj){
   }
   return matrix
 }
+adjacencyListToMatrix({0: [1, 2],
+    1: [0, 2, 3],
+    2: [0, 1],
+    3: [1]})
+//console.log(adjacencyListToMatrix({
+ //   0: [1, 2],
+   // 1: [0, 2, 3],
+    //2: [0, 1],
+    //3: [1]
+  //}))
